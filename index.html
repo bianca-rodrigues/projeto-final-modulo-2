@@ -37,19 +37,19 @@
             text-align: center;
             font-size: 1.5rem;
             width: 92%;
-            padding: 15px;
+            padding: 0.9rem;
             border-radius: 10px;
         }
         .form-title{
-            margin-bottom: 17px;
+            margin-bottom: 1rem;
         }
         input{
             width: 70%;
             height: 1.7rem;
             font-size: 1rem;
-            margin: 12px;
+            margin: 0.75rem;
             border: none;
-            padding: 4px;
+            padding: 0.25rem;
             border-radius: 5px;
         }
         input:focus{
@@ -57,22 +57,22 @@
         }
         .images{
             display: flex;
-            flex-direction: row;
-            margin-top: 25px;
+            margin-top: 1.56rem;
         }
         .box-1-images{
-            display: flex;
             background-image: linear-gradient(to bottom, #2637DA, #332A8E);
-            padding: 10px;
-            margin-right: 35px;
+            padding: 0.6rem;
+            margin-right: 2.35rem;
+            border-radius: 5px;
         }
         .box-2-images{
             background-image: linear-gradient(to bottom, #3D5EEF, #72CCFE);
-            padding: 30px 5px;
+            padding: 1.9rem 0.3rem;
+            border-radius: 5px;
         }
         button{
             background-color: #1D0C20;
-            font-size: 20px;
+            font-size: 1.2rem;
             cursor: pointer;
             color: #FFFFFF;
             width: 65%;
@@ -83,6 +83,36 @@
         button:hover{
             background-color: #FFFFFF;
             color:#1D0C20;
+        }
+        .credits{
+            margin-top: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        @media screen and (max-width:760px){
+            html{
+                font-size: 14px;
+            }
+            .box-1-images{
+                flex-direction: row;
+            }
+            .images{
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .box-1-images{
+                width: 95%;
+                flex-grow: 
+            }
+            .container{
+                width: 95%;
+            }
+            img{
+                width: 30%;
+            }
+
         }
 
     </style>
@@ -138,8 +168,9 @@
             </div>
            
         </div>
-        
-
+        <div class="credits">
+            @Desenvolvido por BiancaRodrigues
+        </div>
     </div>
 </body>
 </html>
