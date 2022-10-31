@@ -55,6 +55,22 @@
         input:focus{
             outline: none;
         }
+        .images{
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+        }
+        .box-1-images{
+            display: flex;
+            background-color: #2637DA;
+            padding: 10px;
+            margin-right: 35px;
+        }
+        .box-2-images{
+            background-color: #5691F6;
+            padding: 30px 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -74,7 +90,32 @@
             <div class="form-title">Digite os seus dados e escolha entre os três finalistas!</div>
             <input type="text" placeholder="Digite seu nome">
             <input type="email" placeholder="Digite seu email">
+
+            <div class="images">
+                <div class="box-1-images"> <!-- imagens -->
+                    <div class="box-2-images">
+                        Esportes
+                        <img src="assets/sports_soccer_white.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="box-1-images"> <!-- imagens -->
+                    <div class="box-2-images">
+                        Simulação
+                        <img src="assets/local_airport_white.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="box-1-images"> <!-- imagens -->
+                    <div class="box-2-images">
+                        Estratégia
+                        <img src="assets/psychology_white.svg" alt="">
+                    </div>
+            </div>
         </div>
+           
+        </div>
+        
 
     </div>
 </body>
