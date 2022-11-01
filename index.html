@@ -49,7 +49,7 @@
             font-size: 1rem;
             margin: 0.75rem;
             border: none;
-            padding: 0.25rem;
+            padding: 0.3rem;
             border-radius: 5px;
         }
         input:focus{
@@ -70,6 +70,9 @@
             padding: 1.9rem 0.3rem;
             border-radius: 5px;
         }
+        .form-font{
+            font-size: 1.5rem;
+        }
         button{
             background-color: #1D0C20;
             font-size: 1.2rem;
@@ -89,27 +92,34 @@
             font-size: 0.9rem;
         }
 
-        @media screen and (max-width:760px){
+        @media screen and (max-width:750px){
             html{
-                font-size: 14px;
+                font-size: 15px;
             }
             .header-title{
                 text-align: center;
+                margin-bottom: 10px;
+                font-size: 25px;
             }
             input{
                 width: 90%;
             }
             .box-1-images{
                 flex-direction: row;
-                width: 95%;
+                width: 92%;
                 margin-bottom: 1.2rem;
             }
             .form{
+                display: flex;
+                flex-direction: column;
                 width: 90%;
+                align-items: center;
             }
             .images{
+                display: flex;
                 flex-direction: column;
-                width: 97%;  
+                width: 70%;
+                margin-top: 10px;  
             }
             .box-2-images{
                 display: flex;
@@ -120,11 +130,75 @@
                 width: 80%;
             }
             img{
-                width: 60%;
+                width: 80%;
+            }
+            .form-font{
+                font-size: 25px;
+            }
+            .form-title{
+                margin-top: 10px;
             }
 
         }
-
+        @media screen and (max-width: 320px) {
+            html{
+                font-size: 13px;
+            }
+            .form-font{
+                font-size: 15px;
+            }
+            .images{
+                width: 94%;
+            }
+            input{
+                width: 70%;
+            }
+            img{
+                width: 50%;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                align-items: center;
+            }
+            .images{
+                display: flex;
+                flex-direction: column;
+                width: 70%;  
+            }
+        }
+        @media screen and (max-width: 160px) {
+            button{
+                font-size: 12px;
+            }
+            input{
+                width: 70%;
+            }
+            .images{
+                width: 90%;
+            }
+            
+        }
+        @media screen and (max-width: 130px)
+        {
+            html{
+                font-size: 12px;
+            }
+            .form-font{
+                font-size: 10px;
+            }
+            button{
+                font-size: 9px;
+            }
+            .header-title{
+                font-size: 13px;
+            }
+            .form-title{
+                font-size: 13px;
+            }
+        }
+      
     </style>
 </head>
 <body>
@@ -148,7 +222,9 @@
             <div class="images">
                 <div class="box-1-images"> <!-- imagens -->
                     <div class="box-2-images">
-                        Esportes
+                        <div class="form-font">
+                            Esportes
+                        </div>
                         <img src="assets/sports_soccer_white.svg" alt="">
                         <button>
                             Votar
@@ -158,7 +234,9 @@
 
                 <div class="box-1-images"> <!-- imagens -->
                     <div class="box-2-images">
-                        Simulação
+                        <div class="form-font">
+                            Simulação
+                        </div>
                         <img src="assets/local_airport_white.svg" alt="">
                         <button>
                             Votar
@@ -168,7 +246,9 @@
 
                 <div class="box-1-images"> <!-- imagens -->
                     <div class="box-2-images">
-                        Estratégia
+                        <div class="form-font">
+                            Estratégia
+                        </div>
                         <img src="assets/psychology_white.svg" alt="">
                         <button>
                             Votar
